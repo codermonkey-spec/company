@@ -1,0 +1,60 @@
+.home {
+    :global {
+       .content {
+            position: relative;
+            height: 90px;
+            padding-left: 20px;
+            padding-right: 20px;
+            img {
+                position: absolute;
+                width: 360px;
+                top: 20px;
+                left: 20px;
+                padding-top: 17px;
+            }
+            
+        }
+
+        .tab-bar {
+            display: flex;
+            align-items: center;
+            background-color: #333333;
+            .tab-bar-wrap {
+                display: flex;
+                .tab-item {
+                    display: block;
+                    width: 160px;
+                    height: 0px;
+                    padding-top: 60px;
+                    font-size: 0.7em;
+                    text-align: center;
+                    background-repeat: no-repeat; 
+
+                    &.active,&:hover {
+                        background-position: 0 -60px;
+                        cursor: pointer;
+                    }
+                     
+                    &:nth-child(1){
+                        background-image: url(@/assets/img/gnav_home.jpg) ;
+                    }
+                    &:nth-child(2) {
+                        background-image: url(@/assets/img/gnav_results.jpg) ;
+                    }
+                    &:nth-child(3){
+                        background-image: url(@/assets/img/gnav_company.jpg) ;
+                    }
+                    &:nth-child(4) {
+                        background-image: url(@/assets/img/gnav_recruit.jpg) ;
+                    }
+                    &:nth-child(5){
+                        background-image: url(@/assets/img/gnav_access.jpg) ;
+                    }
+                    &:nth-child(6){
+                        background-image: url(@/assets/img/gnav_contact.jpg) ;
+                    }
+                }
+            }
+       }
+    }
+}
