@@ -8,3 +8,9 @@ body,
 #root {
     height: 100%;
 }
+
+body {
+    background-image: url(@/assets/img/bg_body.gif);
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-color: #EDEDED;
+}
